@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>SQLインジェクション攻撃体験（SQLI-P2） | WIM-SEC</title>
+    <script src="../bin/main.js"></script>
+    <link href="../bin/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="info">
+      <div class="info_title">SQLインジェクションの体験ページ</div>
+      <div>こちらは、SQLインジェクションによる攻撃に対して、正しい対策が施されています。</div>
+      <div>正しいパスワードを入力してログインしてみましょう。</div>
+    </div>
+    <hr>
+    <div class="wrap">
+      <div class="title"><span>従業員情報管理ページ<br>ログイン</span></div>
+      <div class="to" id="to"></div>
+      <div class="box">
+        <div class="contents">
+          <div class="session">
+            <div class="text"><span>メールアドレスまたは従業員ID</span></div>
+            <div class="input"><input type="text" class="input-text" id="id"></div>
+          </div>
+          <div class="session">
+            <div class="text">パスワード</div>
+            <div><input type="text" class="input-text" id="pass"></div>
+          </div>
+          <div class="session-button">
+            <div><input type="button" value="ログイン" class="button" onclick="post()" id="login"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>var currentPart = 2;</script>
+    <footer>
+        <div class="footer-content">
+            <div>©WIM-CC 2022-2025 <a href="https://w-haruto.wim-cc.com/works/license/" target="_blank">利用規約</a></div>
+            <div>SQLインジェクション攻撃体験アプリ</div>
+        </div>
+    </footer>
+</body>
+</html>

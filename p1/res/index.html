@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>従業員管理ページ（SQLI-P1） | WIM-SEC</title>
+    <link href="../../bin/res_style.css" rel="stylesheet" type="text/css">
+    <script src="../../bin/main.js"></script> </head>
+  <body>
+    <div class="info">
+    <div class="info_title">SQLインジェクションの体験ページ Part.1</div>
+    <div>正しいパスワードを入力することなく、ログインできてしまいました…。</div>
+    <div>従業員の個人情報もパスワードも流失してしまいました。</div>
+    <div>パスワードを他のサービスでも流用していたら、被害が拡大してしまいます…。</div>
+    </div>
+    <hr>
+    <h1>従業員情報 管理ページ</h1>
+
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>名前</th>
+          <th>従業員ID</th>
+          <th>メールアドレス</th>
+          <th>パスワード</th>
+          <th>住所</th>
+          <th>電話番号</th>
+          <th>誕生日</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="action-buttons-container">
+        <button id="logout-button" class="action-button logout-btn">ログアウト</button>
+    </div>
+    <script>var currentPart = 1.1;</script>
+    <footer>
+        <div class="footer-content">
+            <div>©WIM-CC 2022-2025 <a href="https://w-haruto.wim-cc.com/works/license/" target="_blank">利用規約</a></div>
+            <div>SQLインジェクション攻撃体験アプリ</div>
+        </div>
+    </footer>
+</body>
+</html>
