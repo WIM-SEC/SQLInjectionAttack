@@ -31,6 +31,7 @@ body {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   flex-grow: 1; /* ★追加：残りの垂直スペースを占める */
   display: flex; /* wrapをflexコンテナにして、中の要素を縦に並べる */
   flex-direction: column;
@@ -99,18 +100,10 @@ border-bottom:none;
 a, a:visited {
 color: blue;
 }
-footer{
-width: 100%; 
-position: absolute; 
-background-color: white; 
-text-align: right; 
-padding: 0; 
-bottom: 0;
-}
 
 footer {
   width: 100%;
-  /* position: absolute; bottom: 0; は削除。Flexboxで配置するため */
+  position: absolute;
   background-color: #FAFAFA; /* ★修正：bodyの背景色と合わせるか、統一色に */
   text-align: center; /* ★修正：右寄せではなく中央寄せに */
   padding: 10px 0; /* 上下パディング */
